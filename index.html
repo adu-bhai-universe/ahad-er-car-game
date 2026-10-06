@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>Bondhu Racing! 🏎️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <h1>🏎️ Bondhu Racing!</h1>
+  <div class="bar">
+    <div class="pill">❤️ <span id="lives">3</span></div>
+    <div class="pill">🏁 <span id="score">0</span> m</div>
+    <div class="pill">🏆 <span id="best">0</span></div>
+  </div>
+  <div class="stage">
+    <canvas id="cv" width="360" height="560"></canvas>
+    <div id="menu" class="menu">
+      <h2>Bondhu-der gari bachiye chalao!</h2>
+      <p>⬅️ ➡️ / A D / screen tap diye lane bodlao.<br>🍔 dhorle +50 ar jibon.</p>
+      <button id="go">▶ Race Shuru</button>
+    </div>
+  </div>
+  <div class="ctl"><button id="bl">◀</button><button id="br">▶</button></div>
+  <div id="res" class="res">Bondhura rasta-y gari niye ghurche, sabdhan! 😈</div>
+  <div id="chips" class="chips"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

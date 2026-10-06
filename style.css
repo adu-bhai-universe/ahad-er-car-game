@@ -1,0 +1,22 @@
+:root{--bg:#0e1424;--card:#1b2542;--ink:#fffbea;--pop:#ffd23f;--pink:#ff4f6d;--mint:#34f0b0}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:radial-gradient(circle at 20% 0%,#32307a,var(--bg) 60%);color:var(--ink);font-family:"Trebuchet MS","Segoe UI",system-ui,sans-serif;text-align:center;user-select:none;touch-action:manipulation}
+.wrap{max-width:420px;margin:0 auto;padding:10px}
+h1{margin:4px 0;color:var(--pop);font-size:1.9rem;text-shadow:3px 3px 0 var(--pink)}
+.bar{display:flex;gap:8px;justify-content:center;margin:8px 0}
+.pill{background:var(--card);border:2px solid var(--pop);border-radius:999px;padding:4px 14px;font-weight:bold}
+.stage{position:relative;width:100%}
+canvas{width:100%;height:auto;display:block;border-radius:14px;border:4px solid var(--pop);background:#222}
+.menu{position:absolute;inset:0;background:#000b;border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:18px}
+.menu h2{color:var(--mint);margin:0 0 8px}
+.menu p{margin:0 0 16px;line-height:1.5}
+.menu .big{font-size:1.2rem}
+button{background:var(--pink);color:#fff;border:0;border-radius:14px;padding:12px 28px;font-size:1.15rem;font-weight:bold;cursor:pointer;box-shadow:0 5px 0 #9a2540}
+button:active{transform:translateY(4px)}
+.ctl{display:flex;gap:12px;justify-content:center;margin-top:10px}
+.ctl button{flex:1;font-size:1.6rem;padding:10px}
+.res{margin:12px 0 6px;min-height:60px;background:var(--card);border:2px dashed var(--mint);border-radius:14px;padding:10px;display:flex;align-items:center;justify-content:center}
+.nm{background:var(--pop);color:#0e1424;font-weight:900;padding:2px 9px;border-radius:8px;margin:0 2px;display:inline-block;animation:pop .35s}
+@keyframes pop{0%{transform:scale(.3)}70%{transform:scale(1.25)}100%{transform:scale(1)}}
+.chips{display:flex;flex-wrap:wrap;gap:5px;justify-content:center}
+.chip{font-size:.75rem;padding:2px 9px;border-radius:999px;color:#0e1424;font-weight:bold}
